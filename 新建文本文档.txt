@@ -1,0 +1,17 @@
+SELECT shangping.id,shangping.name,shangping.jiage,shangping.shuliang,shangping.tupain,shangping.shijian,hd_leixin.name as hname from shangping,hd_leixin WHERE shangping.leixin_id=hd_leixin.id
+//
+INSERT into shangping (name,jiage,shuliang,tupian,leixin_id,shijian) VALUES ('爱情 · 初心如一/红玫瑰款',269,2.5,'9012676.jpg_220x240.jpg',3,2024-06-25)
+
+//修改语句
+UPDATE shangping SET id='1',leixin_id='1',name='爱情 · 初心如一/红玫瑰款',jiage='788',shuliang='6.6',tupian='9012676.jpg_220x240.jpg',shijian='2024-07-02' WHERE id=1
+//删除语句
+DELETE from hd_leixin WHERE id=4
+
+1	爱情鲜花	| 送 · 让你怦然心动的人	1
+
+4	生日鲜花	| 送 · 寿星的花	1
+
+25	朋友99朵	168	2.1	9012154.jpg_220x240.jpg	4	2024-06-28
+
+搜索
+select * from shangping where name='爱情 · 星辰大海/33枝'
